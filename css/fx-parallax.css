@@ -1,0 +1,45 @@
+/**
+ * LICENCIA...: CC BY-NC-ND 4.0 | Atribucion-NoComercial-SinDerivar 4.0 Inter.
+ * PROYECTO...: FX PARALLAX.
+ * FECHA......: V.2.1.0 | 03/04/2016.
+ * AUTOR......: Alfonso | www.abravogal.com
+ * _____________________________________________________________________________
+ *
+ * TITULO.....:   FX PARALLAX.
+ * DESCRIPCION: - Genera un efecto parallax en las imagenes de fondo.
+ */
+*
+{
+  padding: 0;
+  margin: 0;
+}
+
+div.fxParallax.fxP1 { background-image: url("../img/parallax1.jpg"); }
+div.fxParallax.fxP2 { background-image: url("../img/parallax2.jpg"); }
+div.fxParallax.fxP3 { background-image: url("../img/parallax3.jpg"); }
+
+div.fxParallax
+{
+  padding: 0;
+  margin: 0;
+  float: left;
+  width: 100%;
+  height: 900px;
+  border-bottom: 1px solid rgba(5, 7, 8, 1);
+}
+
+@media all and (min-width: 1024px)
+{
+  div.fxParallax
+  {
+    background-attachment: fixed;
+  }
+}
+
+@media all and (max-width: 1023px)
+{
+  div.fxParallax
+  {
+    height: 400px;
+  }
+}
